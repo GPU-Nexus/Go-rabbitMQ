@@ -15,5 +15,5 @@ go run consumer.go
 
 ## to compile the .proto file
 ```
-protoc --go_out=. --go_opt=paths=source_relative messages/message.proto
+protoc --go_out=. --go_opt=paths=source_relative messages/messages.proto
 ```
