@@ -9,6 +9,11 @@ message MyMessage {
   string content = 2;
 }
 
+message MyMessageReply {
+  string id = 1;
+  string reply = 2;
+}
+
 message Matrix {
   repeated float data = 1; // Flat representation of matrix data (row-major order)
   int32 rows = 2;
@@ -21,8 +26,11 @@ message MatrixResult {
   int32 cols = 3;
 }
 
-
 // Define the CUDA message
 message CudaProgram {
   string code = 1;
+}
+
+message CudaReply {
+  string result = 1;
 }

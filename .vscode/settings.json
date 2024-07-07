@@ -1,6 +1,10 @@
 {
     "cSpell.words": [
         "amqp",
-        "protobuf"
+        "Cuda",
+        "godotenv",
+        "joho",
+        "protobuf",
+        "RABBITMQ"
     ]
 }
