@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package example;
+
+option go_package = "go_rabbitMQ/messages";
+
+message MyMessage {
+  string id = 1;
+  string content = 2;
+}
+
+message Matrix {
+  repeated float data = 1; // Flat representation of matrix data (row-major order)
+  int32 rows = 2;
+  int32 cols = 3;
+}
+
+message MatrixResult {
+  repeated float result = 1; // Flat representation of result matrix data
+  int32 rows = 2;
+  int32 cols = 3;
+}
+
+
+// Define the CUDA message
+message CudaProgram {
+  string code = 1;
+}
