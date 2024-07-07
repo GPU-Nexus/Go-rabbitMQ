@@ -78,6 +78,7 @@ func main() {
 		for d := range msgs {
 			// Here you can unmarshal the message from protobuf if needed
 			// For example, if you are expecting a protobuf message
+			log.Print(d)
 			var msg messages.MyMessage
 			err := proto.Unmarshal(d.Body, &msg)
 			failOnError(err, "Failed to unmarshal message")
