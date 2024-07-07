@@ -19,8 +19,8 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
-          go-version: 1.24
-          
+          go-version: go1.22.4
+
       - name: Set environment variables
         run: echo "RABBITMQ_PASSWORD=guest" >> $GITHUB_ENV
 
