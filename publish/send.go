@@ -220,9 +220,10 @@ func sendMatrixData(exchangeName string, routingKey string, ch *amqp.Channel) {
 
 func sendCuda(exchangeName string, routingKey string, ch *amqp.Channel) {
 
+
 	// Create a new message
 	msg := &messages.CudaProgram{
-		Code: "cuda code",
+		Code: ```cuda code```,
 	}
 
 	// Marshal the message to Protobuf
