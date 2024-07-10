@@ -1,2 +1,47 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+
+# Output of the go coverage tool
+*.cover
+*.coverprofile
+*.cover.out
+
+# Fuzzing artifacts
+*.profraw
+*.profdata
+
+# Binaries for the go command
+go.sum
+go.mod
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Compiled object files
+*.o
+*.a
+
+# Folders
+/vendor/
+bin/
+obj/
+
+# Logs
+*.log
+
 # Environment variables
 .env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
