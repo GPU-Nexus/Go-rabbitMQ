@@ -1,2 +1,4 @@
 # Environment variables
 .env
+go.mod
+go.sum
